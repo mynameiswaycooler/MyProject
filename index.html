@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Цитрус</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+<div class="site-container">
+    <header>
+        <div class="header-content">
+            <div class="h-left">
+                <div class="logo"><img src="images/icon.webp" alt="лого" class="circle" /></div>
+                <a href="#" class="title">Цитрус</a>
+                <div class="filter"><img src="images/temp.png" alt="фильтр" class="icon"/>
+                    <div class="filter-tooltip">
+                        <ol>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="search">
+                    <input type="text" placeholder="Поиск" />
+                    <div class="glass"><img src="images/loopa.png" alt="лупа" class="icon" /></div>
+                </div>
+            </div>
+            <div class="h-right">
+                <div class="cart"><a href="html/cart.html"><img src="images/socool.webp" alt="корзина" class="icon"/></a></div>
+                <div class="nav"><a href="#">Нав1</a><a href="#">Нав2</a><a href="#">Нав3</a></div>
+                <div class="user"><img src="images/help.bmp" alt="иконка" class="circle" /></div>
+                <button class="more">Ещё <img src="images/lpfd.webp" alt="v" class="small-icon" /></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="recomended">
+            <div class="r-wrap">
+                <div class="r-title"><span>Рекомендуемые товары</span></div>
+            </div>
+            <div class="r-slider-container">
+                <button class="rc-button prev" id="prev"><img src="images/left.png" alt="<" /></button>
+                <div class="swiper r-swiper" id="recommendedSwiper">
+                    <div class="swiper-wrapper" id="recommendedWrapper"></div>
+                </div>
+                <button class="rc-button next" id="next"><img src="images/right.png" alt=">" /></button>
+            </div>
+        </section>
+        <section class="catalog-section">
+            <div class="catalog-header">
+                <h2>Весь каталог</h2>
+                <span class="sort-badge">Сортировка: по дате (новые)</span>
+            </div>
+            <div class="catalog-grid" id="catalogGrid"></div>
+            <div class="load-more-wrap">
+                <button class="load-more-btn" id="loadMoreBtn">Загрузить ещё</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="logo"><img src="images/icon.webp" alt="лого" class="circle" /></div>
+                <span class="footer-copy">&copy; 2026 Цитрус</span>
+            </div>
+            <div class="footer-right">
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="script/main3.js"></script>
+</body>
+</html>
